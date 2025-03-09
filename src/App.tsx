@@ -1,13 +1,12 @@
-import Button from '@mui/material/Button';
-
-import './App.css';
+import NavBar from "./components/NavBar";
+import AuthRoutes from './routes/AuthRoutes';
 
 function App() {
   return (
     <>
-    <Button variant="contained">Hello world</Button>;
+    <NavBar  />
+    <AuthRoutes  />
     </>
-      
   );
 }
 
