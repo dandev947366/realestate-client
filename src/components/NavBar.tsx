@@ -4,6 +4,7 @@ import Typography from '@mui/joy/Typography';
 import Avatar from '@mui/joy/Avatar';
 // import ColorSchemeToggle from './ColorSchemeToggle';
 import Icon from '../utils/Icon';
+import { Link } from 'react-router-dom';
 export default function HeaderSection() {
   const { MapsHomeWorkIcon, HomeIcon, LoginIcon, AppRegistrationIcon, LogoutIcon } = Icon;
   return (
@@ -36,7 +37,9 @@ export default function HeaderSection() {
           <MapsHomeWorkIcon />
         </IconButton>
         <Typography component="h1" sx={{ fontWeight: 'xl' }}>
-          Real Estate AWS
+          <a href="/">Real Estate AWS</a>
+          {/* <Link to="/">Real Estate AWS</Link> */}
+          
         </Typography>
       </Box>
       <Box
