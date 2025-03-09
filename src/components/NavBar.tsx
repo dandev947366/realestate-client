@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Box, IconButton } from '@mui/joy';
 import Typography from '@mui/joy/Typography';
 import Avatar from '@mui/joy/Avatar';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 // import ColorSchemeToggle from './ColorSchemeToggle';
-
+import Icon from '../utils/Icon';
 export default function HeaderSection() {
+  const { MapsHomeWorkIcon, HomeIcon, LoginIcon, AppRegistrationIcon, LogoutIcon } = Icon;
   return (
     <Box
       sx={{
@@ -39,6 +39,68 @@ export default function HeaderSection() {
           Real Estate AWS
         </Typography>
       </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 1.5,
+        }}
+      >
+        <IconButton size="sm" variant="soft">
+          <HomeIcon />
+        </IconButton>
+        <Typography component="h1" sx={{ fontWeight: 'xl' }}>
+          Home
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 1.5,
+        }}
+      >
+        <IconButton size="sm" variant="soft">
+          <LoginIcon />
+        </IconButton>
+        <Typography component="h1" sx={{ fontWeight: 'xl' }}>
+          Login
+          
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 1.5,
+        }}
+      >
+        <IconButton size="sm" variant="soft">
+          <AppRegistrationIcon />
+        </IconButton>
+        <Typography component="h1" sx={{ fontWeight: 'xl' }}>
+          Register
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 1.5,
+        }}
+      >
+        <IconButton size="sm" variant="soft">
+          <LogoutIcon />
+        </IconButton>
+        <Typography component="h1" sx={{ fontWeight: 'xl' }}>
+          Logout
+        </Typography>
+      </Box>
+      
       <Box sx={{ display: 'flex', flexDirection: 'row', gap: 3 }}>
         <Box
           sx={{ gap: 1, alignItems: 'center', display: { xs: 'none', sm: 'flex' } }}
